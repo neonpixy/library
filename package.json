@@ -1,0 +1,42 @@
+{
+  "name": "@omnidea/workspace",
+  "private": true,
+  "workspaces": [
+    "crystal",
+    "editor",
+    "sdk",
+    "ui"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=sdk && npm run build --workspace=crystal && npm run build --workspace=ui",
+    "build:sdk": "npm run build --workspace=sdk",
+    "build:crystal": "npm run build --workspace=crystal",
+    "build:ui": "npm run build --workspace=ui",
+    "check": "npm run check --workspace=sdk --if-present && npm run check --workspace=crystal --if-present && npm run check --workspace=ui --if-present",
+    "generate": "npm run generate --workspace=sdk",
+    "clean": "rm -rf sdk/dist crystal/dist ui/dist node_modules",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.1"
+  },
+  "dependencies": {
+    "@tiptap/core": "^3.22.0",
+    "@tiptap/extension-collaboration": "^3.22.0",
+    "@tiptap/extension-collaboration-cursor": "^3.0.0",
+    "@tiptap/extension-image": "^3.22.0",
+    "@tiptap/extension-placeholder": "^3.22.0",
+    "@tiptap/extension-table": "^3.22.0",
+    "@tiptap/extension-table-cell": "^3.22.0",
+    "@tiptap/extension-table-header": "^3.22.0",
+    "@tiptap/extension-table-row": "^3.22.0",
+    "@tiptap/extension-task-item": "^3.22.0",
+    "@tiptap/extension-task-list": "^3.22.0",
+    "@tiptap/pm": "^3.22.0",
+    "@tiptap/starter-kit": "^3.22.0",
+    "lib0": "^0.2.117",
+    "solid-tiptap": "^0.8.0",
+    "y-prosemirror": "^1.3.7",
+    "y-protocols": "^1.0.7"
+  }
+}

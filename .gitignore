@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Claude Code
+.claude/
+
+# Editors
+*.swp
+*.swo
+.vscode/
+
+# Environment / secrets
+.env
+.env.*
+.npmrc
+
+# Node / TypeScript
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.pyc
+
+# Rust
+target/
+
+# Legacy
+.astro/
+.svelte-kit/
+
+# Lock files (workspace uses package-lock.json at root)
+fx/package-lock.json

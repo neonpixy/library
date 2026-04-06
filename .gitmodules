@@ -1,0 +1,15 @@
+[submodule "crystal"]
+	path = crystal
+	url = ../Crystal.git
+[submodule "sdk"]
+	path = sdk
+	url = ../SDK.git
+[submodule "ui"]
+	path = ui
+	url = ../UI.git
+[submodule "editor"]
+	path = editor
+	url = ../Editor.git
+[submodule "fx"]
+	path = fx
+	url = ../FX.git
